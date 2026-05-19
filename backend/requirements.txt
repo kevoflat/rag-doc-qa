@@ -1,9 +1,7 @@
-fastapi==0.111.0
+Set-Content -Path C:\Users\hp\Desktop\R.A.G-system\rag-doc-qa\backend\requirements.txt -Value "fastapi==0.111.0
 uvicorn[standard]==0.29.0
 python-multipart==0.0.9
 pdfplumber==0.11.0
 groq==0.9.0
 chromadb==0.4.24
-python-dotenv==1.0.1
-sentence-transformers==2.7.0
-numpy==1.26.4
+python-dotenv==1.0.1" -Encoding ASCII
