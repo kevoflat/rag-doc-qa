@@ -12,7 +12,7 @@ export default function Chat() {
     setQuestion('')
     setLoading(true)
     try {
-      const res = await axios.post('https://rag-doc-qa-tzox.onrender.com/query', { question })
+      const res = await axios.post('https://rag-doc-qa.kelvinwathoni.workers.dev/query', { question })
       setMessages(prev => [...prev, { role: 'bot', text: res.data.answer, sources: res.data.sources }])
     } catch {
       setMessages(prev => [...prev, { role: 'bot', text: 'Error contacting the API.' }])
