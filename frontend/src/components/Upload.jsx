@@ -14,7 +14,7 @@ export default function Upload({ onUploadSuccess }) {
     const formData = new FormData()
     formData.append('file', file)
     try {
-     const res = await axios.post('https://rag-doc-qa.kelvinwathoni.workers.dev/upload', formData)
+     const res = await axios.post('https://kelmwa-rag-doc-qa.hf.space/upload', formData)
       setStatus('done')
       onUploadSuccess(res.data)
     } catch { setStatus('error') }
